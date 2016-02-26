@@ -1,0 +1,123 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpeechRecognition\"><param name=\"android-package\" value=\"org.apache.cordova.speech.SpeechRecognition\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "org.apache.cordova.speech.speechrecognition": {
+            "PACKAGE_NAME": "com.myrealestate"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognition.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognition",
+            "clobbers": [
+                "SpeechRecognition"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionError.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionError",
+            "clobbers": [
+                "SpeechRecognitionError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionAlternative.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionAlternative",
+            "clobbers": [
+                "SpeechRecognitionAlternative"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionResult.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionResult",
+            "clobbers": [
+                "SpeechRecognitionResult"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionResultList.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionResultList",
+            "clobbers": [
+                "SpeechRecognitionResultList"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionEvent.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionEvent",
+            "clobbers": [
+                "SpeechRecognitionEvent"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechGrammar.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechGrammar",
+            "clobbers": [
+                "SpeechGrammar"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechGrammarList.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechGrammarList",
+            "clobbers": [
+                "SpeechGrammarList"
+            ]
+        }
+    ]
+}

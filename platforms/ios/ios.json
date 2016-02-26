@@ -1,0 +1,133 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpeechRecognition\"><param name=\"ios-package\" value=\"SpeechRecognition\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.myrealestate"
+        },
+        "org.apache.cordova.speech.speechrecognition": {
+            "PACKAGE_NAME": "com.myrealestate"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+            "id": "cordova-plugin-console.console",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "console"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-console/www/logger.js",
+            "id": "cordova-plugin-console.logger",
+            "pluginId": "cordova-plugin-console",
+            "clobbers": [
+                "cordova.logger"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognition.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognition",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognition"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionError.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionError",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognitionError"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionAlternative.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionAlternative",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognitionAlternative"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionResult.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionResult",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognitionResult"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionResultList.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionResultList",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognitionResultList"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechRecognitionEvent.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechRecognitionEvent",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechRecognitionEvent"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechGrammar.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechGrammar",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechGrammar"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.speech.speechrecognition/www/SpeechGrammarList.js",
+            "id": "org.apache.cordova.speech.speechrecognition.SpeechGrammarList",
+            "pluginId": "org.apache.cordova.speech.speechrecognition",
+            "clobbers": [
+                "SpeechGrammarList"
+            ]
+        }
+    ]
+}
