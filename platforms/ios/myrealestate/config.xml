@@ -47,6 +47,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <preference name="apiKey" value="92eee6f0c0a714a4a8414a3322e2387a" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

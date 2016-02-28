@@ -9,6 +9,7 @@
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <preference name="apiKey" value="92eee6f0c0a714a4a8414a3322e2387a" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
